@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    console.log("242");
+
+    //    let result = [1, 2, 3].map(mult(2));
+    let sum = (a,b)=>a+b;
+
+    let result = [1, 2, 3, 4].filter(even).map(mult2).reduce(sum);
+
+    console.log(result);
+
+    function mult(m) {
+        return n => n * m;
+    }
+
+    function mult2(n) {
+        return n * 2;
+    }
+
+    function even(n) {
+        return n % 2 === 0;
+    }
+
+
+</script>
+</body>
+</html>
